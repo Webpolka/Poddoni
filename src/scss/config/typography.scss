@@ -1,0 +1,183 @@
+a {
+	font-size: 1rem;
+	font-weight: normal;
+	color: var(--color-link);
+	font-family: var(--font-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-titles);
+}
+
+.title-1 {
+	// margin: 1em 0 0.5em;
+	font-size: rem(52);
+	font-weight: 500;
+	line-height: rem(77);
+	color: var(--color-white);
+	font-family: var(--font-titles);
+}
+
+.title-2 {
+	// margin: 1em 0 0.5em;
+	font-size: rem(37);
+	line-height: rem(55);
+	font-weight: 400;
+	color: var(--color-black);
+	font-family: var(--font-titles);
+	text-transform: uppercase;
+}
+
+.title-3 {
+	// margin: 1em 0 0.5em;
+	font-size: rem(20);
+	line-height: rem(23);
+	font-weight: 500;
+	font-family: var(--font-main);
+}
+
+// .title-4 {
+// 	margin: 1em 0 0.5em;
+// 	font-size: 18px;
+// 	font-weight: 700;
+// 	font-family: var(--font-titles);
+// }
+.title-orange {
+	font-size: rem(34);
+	font-weight: 600;
+	line-height: rem(50);
+	color: var(--color-orange);
+	font-family: var(--font-titles);
+}
+
+//----------------- icons ---------------------
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	min-width: rem(15);
+	min-height: rem(15);
+}
+
+.icon--logo {
+	width: rem(187);
+	height: rem(60);
+}
+
+.icon--union {
+	width: rem(11);
+	height: rem(15);
+}
+
+.icon--clock {
+	width: rem(15);
+	height: rem(16);
+}
+
+.icon--email {
+	width: rem(18);
+	height: rem(18);
+}
+
+.icon--phone {
+	width: rem(26);
+	height: rem(26);
+}
+
+.icon--phone-black {
+	width: rem(20);
+	height: rem(20);
+}
+
+.icon--left,
+.icon--right {
+	width: rem(32);
+	height: rem(61);
+}
+
+.icon--phone-black {
+	width: rem(20);
+	height: rem(20);
+}
+
+.icon--phone-orange {
+	width: rem(20);
+	height: rem(20);
+}
+
+.icon--email-orange {
+	width: rem(23);
+	height: rem(23);
+}
+
+.icon--clock-orange {
+	width: rem(23);
+	height: rem(22);
+}
+
+.icon--union-orange {
+	width: rem(23);
+	height: rem(24);
+}
+
+.icon--lock {
+	width: rem(12);
+	height: rem(12);
+}
+
+.icon--why-1,
+.icon--why-2,
+.icon--why-3,
+.icon--why-4,
+.icon--why-5,
+.icon--why-6,
+.icon--why-7,
+.icon--why-8 {
+	width: rem(95);
+	height: rem(95);
+}
+
+//---------- span ----------
+
+.union-orange,
+.email-orange,
+.clock-orange {
+	position: relative;		
+	span {
+		display: inline-block;
+		font-size: rem(16);
+		line-height: rem(19);
+		font-weight: 400;
+		color: var(--color-white);
+		padding-left: 1.7rem;
+		&::before {
+			position: absolute;
+			left: 0;top: 0;
+			content: "";
+			width: rem(20);
+			height: rem(20);		
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+	}
+	
+}
+.union-orange span{
+	font-size: rem(13);
+	line-height: rem(15);
+}
+.union-orange span::before{
+	background-image: url(../../icons/union-orange.svg);
+}
+.clock-orange span::before{
+	background-image: url(../../icons/clock-orange.svg);
+}
+.email-orange span::before{
+	background-image: url(../../icons/email-orange.svg);
+}

@@ -1,0 +1,103 @@
+.section-anounce {
+    position: relative;
+   
+    margin-top: rem(-63);
+    padding-top: rem(170);
+    padding-bottom: rem(40);
+    min-height: rem(715);
+    background-image: url(../../images/anounce-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__slider {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 45%;
+            width: rem(32);
+            height: rem(61);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain !important;
+        }
+
+        .owl-prev {
+            left: 0;
+            background-image: url(../../icons/left.svg) !important;
+        }
+
+        .owl-next {
+            right: 0;
+            background-image: url(../../icons/right.svg) !important;
+        }
+    }
+
+    &__slide {
+        width: 85%;
+        margin: 0 auto;
+        padding: rem(65) rem(75);
+        background-color: rgba(1, 1, 0, 0.54);
+
+        .title-1 {
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            width: 80%;
+            padding-bottom: rem(30);
+            font-size: rem(30);
+            line-height: rem(44);
+            font-weight: 600;
+            letter-spacing: 0;
+            font-family: var(--font-accent);
+        }
+
+        .btn-main {
+            display: inline-block;
+            padding: rem(25) rem(90);
+            font-size: rem(30);
+            line-height: rem(35);
+            font-weight: 500;
+        }
+    }
+
+    &__panel {
+
+        position: relative;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: rem(75);
+
+        .anounceDots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                display: inline-block;
+                width: rem(30);
+                height: rem(30);
+                background-color: var(--color-white);
+                border: 1px solid var(--color-white);
+                border-radius: 5rem;
+                margin-left: rem(14);
+                margin-right: rem(14);
+            }
+
+            .owl-dot.active {
+                background-color: var(--color-main);
+                border: 1px solid var(--color-main);
+            }
+        }
+
+    }
+
+    @include mobile {
+        margin-top: rem(-82);
+        .btn-main{
+            padding: rem(20) rem(55);
+        }
+    }
+}

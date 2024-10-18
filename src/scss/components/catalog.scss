@@ -1,0 +1,60 @@
+.section-catalog{
+    padding-top: rem(150);
+    padding-bottom: rem(85);
+    .title-2{
+        margin-bottom: rem(85);
+    }
+    .product{
+        --paddingRow: 2.25rem;
+
+        border: 2px solid var(--color-box);
+        margin-bottom: rem(30);
+        &__image{
+            .ibg{
+                min-height: rem(290);
+            }
+            img{
+                object-fit: contain;
+            }
+        }
+        &__title{
+            padding: 1rem var(--paddingRow);
+            color:rgb(49, 44, 33);
+        }
+        &__describtion{
+            padding-bottom: 1.5rem;
+            padding-left: var(--paddingRow);
+            padding-right: var(--paddingRow);
+            p{
+                font-size: rem(18);
+                line-height: rem(21);
+                font-weight: 300;
+                color: var(--color-box);
+            }
+        }
+        &__button{
+            padding-left: var(--paddingRow);
+            padding-right: var(--paddingRow);
+            padding-bottom: var(--paddingRow);
+            .btn-main{
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+    @include mobile {
+        .ingrid-3{
+            width: 50%;
+        }
+        padding-top: rem(55);
+        padding-bottom: rem(0);
+        .title-2{
+            margin-bottom: rem(35);
+        }
+    }
+    @include phone {
+        .ingrid-3{
+            width: 100%;
+        }
+    }
+}

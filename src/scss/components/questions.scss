@@ -1,0 +1,96 @@
+.section-questions{
+    padding-top: rem(100);
+    padding-bottom: rem(114);
+    &--grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 rem(70);
+    }
+    .title-2{
+        margin-bottom: rem(60);
+    }
+    .tile-1{
+        .ibg{
+            min-height: rem(423);
+        }
+        img{
+            object-fit: cover;
+        }
+        p{
+            position: relative;
+            top: -5px;
+            padding: rem(36) rem(67);
+            font-size: rem(29);
+            line-height: rem(34);
+            font-weight: 400;
+            color: var(--color-black) ;
+            border: 2px solid var(--color-box);
+            background-color: var(--color-white);
+            &::before{
+                position: absolute;
+                content: "";
+                width: rem(100);
+                height: rem(50);
+                top: rem(-46);
+                left: 30%;
+                background-image: url(../../icons/angle.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+    .tile-2{
+        padding-top: 7rem;
+        input[type="text"],
+        input[type="phone"]{
+            font-size: rem(19);
+            line-height: rem(23);
+            font-weight: 400;
+            width: 100%;
+            padding: rem(25) rem(37);
+            color: var(--color-box) ;
+            border: 2px solid var(--color-box);
+            margin-bottom: rem(14);
+        }
+        // input[type="checkbox"]{
+        //     display: inline-block;
+           
+        // }
+        .checkbox{
+            font-size: rem(13);
+            line-height: rem(15);
+            font-weight: 500;
+            color: var(--color-black) ;
+            margin-top: rem(20);
+            margin-bottom: rem(20);
+        }    
+        .line-start{
+            margin-top: rem(10);
+            span{
+                display: inline-block;
+                font-size: rem(13);
+                line-height: rem(15);
+                font-weight: 300;
+                color: var(--color-black) ;
+            }
+        }    
+       
+    }
+    @media (max-width:600px) {      
+        padding-top: rem(25);
+        padding-bottom: rem(25);
+        .title-2{
+            margin-bottom: rem(15);
+        }
+        .ibg{
+            min-height: rem(723) !important;
+        }
+        &--grid{
+            display: block;
+         }
+         .tile-2{
+            padding-top: 0rem;
+         }
+    }
+}

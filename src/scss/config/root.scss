@@ -1,0 +1,45 @@
+// ширина контейнера из макета
+$container-width: 1346;
+// отступы безопасности для контейнера
+$main-offset: 15;
+// максимальная ширина страницы
+$max-width: 1346;
+// минимальная ширина телефона
+$min-width: 320;
+// ширина контейнера с учетом padding слева и справа
+$max-width-container: $container-width + ($main-offset * 2);
+// $max-width-container: $container-width ;
+// $header-height: 100;
+// $footer-height: 100;
+
+:root {
+	--container-width: 1346px;
+	--container-padding: 15px;
+
+	// ------------ Fonts Vars -------------
+	--font-main: "Roboto", sans-serif;
+	--font-main-size: 16px;
+	--font-main-weight: 400;
+	--font-accent: 'Oswald', sans-serif;
+	--font-titles: var(--font-accent);
+
+	// ------------ Colors Vars -------------
+	--color-main: rgb(255, 197, 1);
+	--color-main-hover: rgb(248, 211, 90);	
+	--color-accent:rgb(65, 58, 53);
+	--color-link: rgb(49, 44, 33);
+	--color-white: #fff;	
+	--color-black: rgb(49, 44, 33);
+	--color-orange:rgb(255, 112, 0);	
+	--color-grey:rgb(49, 44, 33);	
+	--color-box: rgb(190, 187, 174);
+	--color-page-bg: #fff;
+	
+	
+	--transition: 0.3s ease-in-out;
+	--radius: rem(4);	
+	
+	--shadow: 0 0 0 2px #00f;
+	--shadow-hover: 0 0 5px 0 #{rgba(#000, 10%)}, 0 0 10px 0 #{rgba(#000, 10%)}, 0 0 15px 0 #{rgba(#000, 10%)};
+	
+}
